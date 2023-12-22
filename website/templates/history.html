@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block title %}History{% endblock %}
+{% block location %}
+{% endblock %}
+{% block content %}
+<h1>History</h1>
+<section class="cta-table-main">
+    <div class="container">
+        <table class="rwd-table">
+            <tbody>
+                <tr>
+
+                        <th>Requested prompt</th>
+                        <th>Response</th>
+
+                </tr>
+                {% if items %}
+                {% for item in items %}
+                    <tr>
+                            <td>{{ item.user }}</td>
+                            <td>{{ item.bot }}</td>
+                    </tr>
+                {% endfor %}
+                {% else %}
+                <tr>
+                            <td>None</td>
+                            <td>None</td>
+                    </tr>
+            {% endif %}
+            </tbody>
+        </table>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %}Search Result{% endblock %}
+{% block content %}
+<a class="cta-back-to-query" href="{{ url_for('views.Input') }}">Back to query</a>
+<section class="cta-table-main">
+    <div class="container">
+        <table class="rwd-table">
+            <tbody>
+                <tr>
+                    {% for col in data.columns %}
+                        <th>{{ col }}</th>
+                    {% endfor %}
+                </tr>
+                {% for _, row in data.iterrows() %}
+                    <tr>
+                        {% for _, value in row.items() %}
+                            <td>{{ value }}</td>
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</section>
+<br>
+<a class="cta-back-to-home" href="/">Back to home</a>
+{% endblock %}

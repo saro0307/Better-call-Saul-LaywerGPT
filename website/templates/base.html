@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Title{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/style.css') }}">
+</head>
+<body>
+{% block location %}
+    <div class="cta-search-bar">
+        <form action="/search" method="post">
+
+            <input type="text" id="address" name="address" placeholder="Want Lawyers? Enter your location!" required>
+            <button type="submit"><img src="{{ url_for('static', filename='img/search.svg') }}" alt=""></button>
+        </form>
+    </div>
+{% endblock %}
+{% block content %}
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block title %}Input Page{% endblock %}
+{% block content %}
+<div class="cta-two-button">
+<a class="cta-back-to-home" href="{{ url_for('views.home') }}">Back to home</a>
+<a class="cta-back-to-home" href="{{ url_for('views.history') }}"><h4>See History</h4></a>
+    </div>
+    <section class="chatbot-main">
+
+   <div class="cta-input">
+            <form method="post">
+                <label>Say your query</label>
+                 <div class="cta-input-section">
+                <textarea type="text" name="input" id="input" required cols="50" rows="20" ></textarea>
+                <button type="submit">Send</button>
+             </div>
+            </form>
+        </div>
+
+         <div class="cta-output">
+            <div class="cta-user-prompt">
+                <img src="{{ url_for('static', filename='img/user.svg') }}" alt="">
+                <p>User prompt </p>
+            </div>
+            <div class="cta-bot-prompt">
+
+                <p>Bot prompt </p>
+                <img src="{{ url_for('static', filename='img/bot.svg') }}" alt="">
+            </div>
+        </div>
+          </section>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Home Page{% endblock %}
+{% block location %}{% endblock %}
+{% block content %}
+
+ <section class="home">
+    <img src="{{ url_for('static', filename='img/homebg.png') }}" alt="">
+<p>Hello! I'm Saul, Saul Goodman your personal legal advisor. you have any doubt about your Civil rights ? Well! I am here to help you ask Any question Regarding it And i will provide you the best legal solution than any other lawyers out there. Civil rights ? 'Better Call Saul' </p>
+<a href="{{ url_for('views.Input') }}">Start</a>
+    </section>
+{% endblock %}
