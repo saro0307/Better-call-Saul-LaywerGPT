@@ -21,7 +21,7 @@ The dataset used for training is sourced from the Indian Penal Code, providing a
 The system includes a dataset of real lawyers with their names and phone numbers. Users are encouraged to contact these professionals if they wish to pursue legal actions based on the generated advice.
 
 ## License
-This project is licensed under the BSD 3-Clause License(LICENSE), which can be found in the LICENSE file.
+This project is licensed under the BSD 3-Clause License[license](LICENSE), which can be found in the LICENSE file.
 
 ## Disclaimer
 The legal advice provided by Better Call Saul (LawyerGPT) is generated based on pre-trained data and should not be considered a substitute for professional legal advice. Users are encouraged to consult with qualified legal professionals for accurate and reliable information.
