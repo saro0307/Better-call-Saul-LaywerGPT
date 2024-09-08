@@ -21,7 +21,7 @@ def chat(chat_history, user_input):
     return chat_history
 
 
-dataset_path = 'hi_DOLA_List_of_Advocate_Tamilnadu_2013_to_june2014.csv'
+dataset_path = 'Sample-Advocates_Database.csv'
 advocate_data = pd.read_csv(dataset_path, encoding='unicode_escape')
 checkpoint = "MBZUAI/LaMini-Flan-T5-783M"
 tokenizer = AutoTokenizer.from_pretrained(checkpoint)
